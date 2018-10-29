@@ -4,12 +4,12 @@ spring:
   datasource:
     system-datasource: #系统运行库
       driverClassName: oracle.jdbc.driver.OracleDriver
-      url: jdbc:oracle:thin:@//127.0.0.1:1521/orcal
+      url: jdbc:oracle:thin:@//127.0.0.1:1521/datacentre
       username: 'test'
       password: 'test'
     czbz-datasource: #参照标准库
       driverClassName: oracle.jdbc.driver.OracleDriver
-      url: jdbc:oracle:thin:@//127.0.0.1:1521/orcal
+      url: jdbc:oracle:thin:@//127.0.0.1:1521/datacentre
       username: 'USR_CZBZ'
       password: 'USR_CZBZ'
 
