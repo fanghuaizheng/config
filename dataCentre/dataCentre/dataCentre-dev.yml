@@ -1,0 +1,37 @@
+server:
+  port: 8082
+spring:
+  datasource:
+    system-datasource: #系统运行库
+      driverClassName: oracle.jdbc.driver.OracleDriver
+      url: jdbc:oracle:thin:@//127.0.0.1:1521/datacentre
+      username: 'test'
+      password: 'test'
+    czbz-datasource: #参照标准库
+      driverClassName: oracle.jdbc.driver.OracleDriver
+      url: jdbc:oracle:thin:@//127.0.0.1:1521/datacentre
+      username: 'USR_CZBZ'
+      password: 'USR_CZBZ'
+
+  redis: #redis 配置
+    host: localhost
+    port: 6379
+
+logging:
+  level:
+    com:
+      bosssoft:
+        datacentre: debug
+eureka:
+  client:
+    service-url:
+      defaultZone: http://admin:${jhipster.registry.password}@127.0.0.1:8761/eureka/
+service:
+#    用户中心登录验证
+    loginUrl: http://localhost:8282/appframe-web/u/submitLogin.do
+#    用户中心根据用户信息获取菜单接口
+    menuUrl: http://localhost:8282/appframe-web/platform/appframe/afauser/getMenuRelation.do
+
+swagger: 
+  enable: true
+
