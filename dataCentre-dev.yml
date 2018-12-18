@@ -1,5 +1,5 @@
 server:
-  port: 8082
+  port: 7002
 spring:
   datasource:
     system-datasource: #系统运行库
@@ -25,7 +25,7 @@ logging:
 eureka:
   client:
     service-url:
-      defaultZone: http://admin:admin@192.168.1.178:8761/eureka/
+      defaultZone: http://127.0.0.1:1111/eureka/
       
 service:
 #    用户中心登录验证
