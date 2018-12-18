@@ -21,5 +21,5 @@ eureka:
     lease-renewal-interval-in-seconds: 5
     lease-expiration-duration-in-seconds: 10
 service: 
-  document_title: 合肥工业大学数据中心111111
+  document_title: 合肥工业大学数据中心2222
   title: 合肥工业大学数据中心
